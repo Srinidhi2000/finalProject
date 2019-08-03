@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cafe_bkg">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:id="@+id/register_text"
+        android:layout_marginTop="100dp"
+    android:layout_centerHorizontal="true"    />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter a username"
+    android:layout_below="@id/register_text"
+    android:textColorHint="@android:color/white"
+    android:textColor="@android:color/white"
+    android:id="@+id/register_username"
+    android:inputType="textPersonName"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Enter Password"
+        android:layout_below="@id/register_username"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:inputType="textVisiblePassword"
+        android:layout_marginTop="20dp"
+        android:id="@+id/register_password"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Confirm Password"
+        android:layout_below="@id/register_password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:id="@+id/confirmpassword"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="submitRegister"
+        android:id="@+id/submitLogin"
+        android:text="REGISTER"
+        android:layout_below="@id/confirmpassword"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitLogin"
+        android:id="@+id/already"
+        android:textColor="@android:color/black"
+        android:text="Already an existing user?"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login here"
+        android:layout_below="@id/already"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:onClick="backtologin"/>
+<ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:indeterminate="false"
+    android:id="@+id/loading"/>
+
+</RelativeLayout>

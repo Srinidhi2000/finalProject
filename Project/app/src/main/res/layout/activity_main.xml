@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cafe_bkg"
+    tools:context=".login.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+       android:layout_marginTop="100dp"
+       android:layout_gravity="center_horizontal"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Username"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+    android:id="@+id/username"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Password"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:id="@+id/password"
+        />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="submitLogin"
+    android:id="@+id/submitLogin"
+    android:text="SUBMIT"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="center_horizontal"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="New User ? "
+    android:textColor="@android:color/white"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resgister here"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:onClick="Register"/>
+
+</LinearLayout>
